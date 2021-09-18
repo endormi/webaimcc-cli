@@ -26,8 +26,8 @@ def main():
 
     # If same character and length is less than 6
     # API prints out different result when only having 3
-    if is_same_char(fcolor) and len(fcolor) != 6: fcolor = repeat_char(fcolor, 6)
-    if is_same_char(bcolor) and len(bcolor) != 6: bcolor = repeat_char(bcolor, 6)
+    if is_same_char(fcolor) and len(fcolor) < 6: fcolor = repeat_char(fcolor, 6)
+    if is_same_char(bcolor) and len(bcolor) < 6: bcolor = repeat_char(bcolor, 6)
 
     url = 'https://webaim.org/resources/contrastchecker/?fcolor={}&bcolor={}&api'.format(fcolor, bcolor)
 
