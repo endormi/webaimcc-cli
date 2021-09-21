@@ -7,7 +7,7 @@
 Clone repository:
 
 ```
-https://github.com/endormi/webaimcc-cli.git
+git clone https://github.com/endormi/webaimcc-cli.git
 ```
 
 Install `requests` package:
