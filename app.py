@@ -16,13 +16,13 @@ def repeat_char(char, num_of_times):
     return (char * (num_of_times//len(char) + 1))[:num_of_times]
 
 def main():
-    print("Use hexadecimal.")
+    print("Use hexadecimal (without #).")
     fcolor = input('Foreground color: ').strip()
     bcolor = input('Background color: ').strip()
 
     # Value if empty input
-    if not fcolor: fcolor = '0' * 6
-    if not bcolor: bcolor = 'F' * 6
+    if not fcolor: fcolor = repeat_char('0', 6)
+    if not bcolor: bcolor = repeat_char('F', 6)
 
     # If same character and length is less than 6
     # API prints out different result when only having 3
